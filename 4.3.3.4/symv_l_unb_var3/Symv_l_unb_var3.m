@@ -1,13 +1,4 @@
-
-% Copyright 2018 The University of Texas at Austin
-%
-% For licensing information see
-%                http://www.cs.utexas.edu/users/flame/license.html 
-%                                                                                 
-% Programmed by: Name of author
-%                Email of author
-
-function [ y_out ] = Function_Name_unb( L, x, y )
+function [ y_out ] = Symv_l_unb_var3( L, x, y )
 
   [ LTL, LTR, ...
     LBL, LBR ] = FLA_Part_2x2( L, ...
