@@ -55,4 +55,4 @@ function [ A_out, B_out ] = Gaussjordan_mrhs_part1( A, B )
   B_out = [ BT
             BB ];
 
-return
+end
