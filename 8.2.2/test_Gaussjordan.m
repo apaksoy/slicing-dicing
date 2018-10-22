@@ -12,11 +12,13 @@ b = [
      2
 ]
 
-[A1, b1] = Gaussjordan_part1(A, b)
-[A2, b2] = Gaussjordan_part2(A1, b1)
-% round() is used to prevent false warnings from the approximation errors by the computer
-round(A * b2 - b, 4)
+[A1, b1] = Gaussjordan_part1(A, b);
+[A2, b2] = Gaussjordan_part2(A1, b1);
 
+% This should give b
+A * b2
+
+% round() is used to prevent false warnings from the approximation errors by the computer
 if ( isequal( round(A * b2,4), b ) )
     disp( 'Gaussjordan_part1 and Gaussjordan_part2 appear to be correct' )
 else
