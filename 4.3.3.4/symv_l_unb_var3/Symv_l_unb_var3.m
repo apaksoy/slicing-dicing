@@ -1,12 +1,12 @@
 function [ y_out ] = Symv_l_unb_var3( L, x, y )
-% Computes y := Ax + y for a symmetric matrix A stored
+% Computes y := A * x + y for a symmetric matrix A stored
 % only in the lower part of the matrix
 
 % It utilizes the fact that A = L + Lh^T where
 % L is the lower triangular part of A and 
 % Lh is the stricly lower triangular part of A.
 
-% Therefore y := Ax + y = (L + Lh^T)x + y = Lx + Lh^T(x) + y
+% Therefore y := A * x + y = (L + Lh^T) * x + y = L * x + Lh^T(x) + y
 
   [ LTL, LTR, ...
     LBL, LBR ] = FLA_Part_2x2( L, ...
@@ -42,11 +42,11 @@ function [ y_out ] = Symv_l_unb_var3( L, x, y )
 
     %------------------------------------------------------------%
 
-    % Compute Lx, comes from Trmvp_ln_unb_var2()
+    % Compute L * x, comes from Trmvp_ln_unb_var2()
     psi1 = laff_axpy(chi1, lambda11, psi1);
     y2 = laff_axpy(chi1, l21, y2); 
     
-    % Compute Lh^Tx, comes from Trmvp_lt_unb_var1() 
+    % Compute Lh^T * x, comes from Trmvp_lt_unb_var1() 
     psi1 = laff_dots(l21, x2, psi1); % l21t in the algorithm but OK for laff_dots()
         
     %------------------------------------------------------------%
