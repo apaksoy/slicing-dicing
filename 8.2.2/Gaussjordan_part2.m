@@ -1,4 +1,6 @@
 function [ A_out, b_out ] = Gaussjordan_part2( A, b )
+% First step in solving a set of linear equations Ax = b for x.
+
 % Solves Ax = b for x where A is a diagonal matrix.
 
 % A is transformed to an identity matrix to get the solution
