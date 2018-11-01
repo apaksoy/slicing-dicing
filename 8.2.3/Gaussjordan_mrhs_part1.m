@@ -1,5 +1,5 @@
 function [ A_out, B_out ] = Gaussjordan_mrhs_part1( A, B )
-% First step in solving a set of linear equations AX = B for X.
+% First step in solving sets of linear equations AX = B for X.
 
 % Transforms A into a diagonal matrix using the Gauss - Jordan method
 % and returns it in A_out.
