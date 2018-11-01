@@ -1,7 +1,18 @@
 function [ A_out, B_out ] = GJ_inverse_part1( A, B )
-% First part of Gauss - Jordan elimination with multiple 
-% right-hand side solution for AX = B. B should be input 
-% as the identity matrix of the appropriate size
+% First step in finding the inverse of the matrix A.
+
+% Transforms A into a diagonal matrix where AX = B and 
+% B is the identity matrix.
+
+% B should be input as the identity matrix of the same size with A.
+
+% A is transformed into a diagonal matrix using the Gauss - Jordan method
+% and returned in A_out.
+
+% B is transformed along with A with the same Gauss - Jordan
+% transforms and returned in B_out.
+
+% GJ_Inverse_part2() can be used as the 2nd step.
 
   [ ATL, ATR, ...
     ABL, ABR ] = FLA_Part_2x2( A, ...
