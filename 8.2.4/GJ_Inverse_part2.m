@@ -1,8 +1,17 @@
 function [ A_out, B_out ] = GJ_Inverse_part2( A, B )
-% Second part of Gauss - Jordan elimination with multiple 
-% right-hand side solution for AX = B. 
-% A and B passed here should be the output Gauss - Jordan
-% elimination with MRHS part one.
+% 2nd step in finding the inverse of matrix A
+
+% Solves AX = B for X when A is a diagonal matrix.
+
+% A is transformed to an identity matrix to get the solution
+% and returned in A_out.
+
+% B is transformed by the same diagonal matrix transforming A.
+% So B is overwritten with the solution for X and returned 
+% as B_out.
+
+% Output of GJ_Inverse_part1(), for both A and B, can be used 
+% as an input for this routine.
 
   [ ATL, ATR, ...
     ABL, ABR ] = FLA_Part_2x2( A, ...
