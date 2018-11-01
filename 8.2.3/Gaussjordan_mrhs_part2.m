@@ -1,4 +1,15 @@
 function [ A_out, B_out ] = Gaussjordan_mrhs_part2( A, B )
+% Solves AX = B for X when  A is a diagonal matrix.
+
+% A is transformed to an identity matrix to get the solution
+% and returned in A_out.
+
+% B is transformed by the same diagonal matrix transforming A.
+% So B is overwritten with the solution for X and returned 
+% as B_out.
+
+% Output of Gaussjordan_mrhs_part1(), both for A and B, 
+% can be used as the input for this routine.
 
   [ ATL, ATR, ...
     ABL, ABR ] = FLA_Part_2x2( A, ...
