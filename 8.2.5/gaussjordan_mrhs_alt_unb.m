@@ -1,12 +1,13 @@
 function [ B_out] = Gaussjordan_mrhs_alt_unb( A, B )
 % Solves AX = B for X using Gauss - Jordan elimination method in one sweep.
 % Transforms A into an identity matrix.
+
 % B is transformed along with A with the same Gauss - Jordan
 % transforms and returned in B_out as the solution X.
 
-% Note that while number of iterations is reduced compared with
+% Number of iterations is reduced compared with
 % the two-sweep version (GaussJordan_mrhs_part1() and 
-% GaussJordan_mrhs_part1()), computation cost is increased
+% GaussJordan_mrhs_part1()), but computation cost is increased
 % as an extra operation is required.
 
 
