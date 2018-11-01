@@ -1,4 +1,6 @@
 function [ A_out, B_out ] = Gaussjordan_mrhs_part2( A, B )
+% Second step in solving sets of linear equations AX = B for X.
+
 % Solves AX = B for X when  A is a diagonal matrix.
 
 % A is transformed to an identity matrix to get the solution
