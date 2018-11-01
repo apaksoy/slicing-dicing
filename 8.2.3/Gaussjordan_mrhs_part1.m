@@ -1,4 +1,13 @@
 function [ A_out, B_out ] = Gaussjordan_mrhs_part1( A, B )
+% First step in solving a set of linear equations AX = B for X.
+
+% Transforms A into a diagonal matrix using the Gauss - Jordan method
+% and returns it in A_out.
+
+% B is transformed along with A with the same Gauss - Jordan
+% transforms and returned in B_out.
+
+% Gaussjordan_mrhs_part2() can be used for the 2nd step.
 
   [ ATL, ATR, ...
     ABL, ABR ] = FLA_Part_2x2( A, ...
