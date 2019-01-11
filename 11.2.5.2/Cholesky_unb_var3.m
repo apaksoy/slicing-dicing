@@ -1,7 +1,6 @@
 function [ A_out ] = Cholesky_unb_var3( A )
-% Factors A into its Cholesky form, i.e. A = L(LT).
-% Only lower part of A is overwrittent with L, the lower triangular 
-% Cholesky matrix.
+% Factors A into its the form LL^T.
+% Only lower part of A is overwrittent with the lower triangular L. 
 % See the video in section 8.4.2 "Solving Ax=b ..." for its development 
 % and 10.5.1, "Solving the Normal Equations", for its usage.
 % The code in this file is same as the one provided in the course. 
