@@ -1,4 +1,4 @@
-Last updated: 21 October 2018
+Last updated: 12 January 2019
 
 # slicing-dicing
 Solutions to various homework questions or recommended exercises from [LAFF, UTAustinX: UT.5.05x](https://www.edx.org/course/linear-algebra-foundations-to-frontiers) taught in fall 2018 at edX. 
