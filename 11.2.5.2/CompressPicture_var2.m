@@ -39,7 +39,7 @@ V = A' * B;
 % Overwrite lower triangular part of C with its Cholesky factorization
 C = Cholesky_unb_var3(C);
 
-% Extract the unit lower triangular matrix L and upper triangular matrix U.
+% Extract the unit lower triangular matrix L.
 L = tril( C );
 
 % Solve L(L^TX) = V, overwriting V with X
