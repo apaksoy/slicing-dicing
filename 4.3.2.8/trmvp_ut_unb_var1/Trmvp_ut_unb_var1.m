@@ -1,4 +1,6 @@
 function [ y_out ] = Trmvp_ut_unb_var1( U, x, y )
+% Computes y := U'x + y where U is an upper triangular matrix using dot products
+
 
   [ UTL, UTR, ...
     UBL, UBR ] = FLA_Part_2x2( U, ...
