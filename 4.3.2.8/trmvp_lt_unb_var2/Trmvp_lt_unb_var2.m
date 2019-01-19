@@ -1,4 +1,6 @@
 function [ y_out ] = Trmvp_lt_unb_var2( L, x, y )
+% Computes y := L'x +y where L is lower triangular using AXPY
+
 
   [ LTL, LTR, ...
     LBL, LBR ] = FLA_Part_2x2( L, ...
