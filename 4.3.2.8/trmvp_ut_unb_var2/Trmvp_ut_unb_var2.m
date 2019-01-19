@@ -1,5 +1,5 @@
 function [ y_out ] = Trmvp_ut_unb_var2( U, x, y )
-% Computes y := U'x + y without explicitly transposing U
+% Computes y := (U^T)x + y without explicitly transposing U
 % where U is an upper triangular matrix using AXPY
 
   [ UTL, UTR, ...
