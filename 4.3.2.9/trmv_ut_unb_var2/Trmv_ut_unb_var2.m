@@ -27,7 +27,7 @@ function [ x_out ] = Trmv_ut_unb_var2( U, x )
 
     %------------------------------------------------------------%
 
-    x2 = laff_axpy(chi1, u12t, x2); % u12 in the algorithm but OK for laff_dots()
+    x2 = laff_axpy(chi1, u12t, x2); % u12 in the algorithm but OK for laff_axpy()
     chi1 = laff_axpy(chi1, upsilon11, 0); 
 
     %------------------------------------------------------------%
