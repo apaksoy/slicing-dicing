@@ -1,4 +1,7 @@
 function [ x_out ] = Trmv_lt_unb_var2( L, x )
+% Computes x := L'x using AXPY without explicitly transposing L
+% where L is an upper triangular matrix and overwriting x within the function.
+% Overwriting of x within the function makes the function use less memory.
 
   [ LTL, LTR, ...
     LBL, LBR ] = FLA_Part_2x2( L, ...
