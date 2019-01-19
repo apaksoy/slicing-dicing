@@ -1,4 +1,6 @@
 function [ x_out ] = Trmv_ut_unb_var1( U, x )
+% Computes y := U'x using dot products without explicitly transposing U
+% where U is an upper triangular matrix and overwriting x. 
 
   [ UTL, UTR, ...
     UBL, UBR ] = FLA_Part_2x2( U, ...
