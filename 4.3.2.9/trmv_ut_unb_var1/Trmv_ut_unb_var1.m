@@ -1,5 +1,5 @@
 function [ x_out ] = Trmv_ut_unb_var1( U, x )
-% Computes x := (L^T)x using dot products without explicitly transposing U
+% Computes x := (U^T)x using dot products without explicitly transposing U
 % where U is an upper triangular matrix and overwriting x within the function.
 % Overwriting of x within the function makes the function use less memory.
 
