@@ -1,5 +1,5 @@
 function [ y_out ] = Trmvp_lt_unb_var2( L, x, y )
-% Computes y := L'x + y without explicitly transposing L 
+% Computes y := (L^T)x + y without explicitly transposing L 
 % where L is a lower triangular matrix using AXPY
 
 
