@@ -1,5 +1,5 @@
 function [ L_out ] = Inv_l_unb_var1( L )
-% Finds the inverse of lower trigonometric matrix with no zeroes on diagonal
+% Finds inverse of the lower trigonometric matrix L with no zeroes on diagonal
 
   [ LTL, LTR, ...
     LBL, LBR ] = FLA_Part_2x2( L, ...
